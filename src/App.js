@@ -74,7 +74,6 @@ const App = () => {
   }
 
   const handleMinusNumbers = () => {
-
     if(firstNumber === '0'){
         setFirstNumber(String(currentNumber));
         setCurrentNumber('0')
@@ -84,11 +83,9 @@ const App = () => {
       setCurrentNumber(String(sum))
       setOperation('')
     }
-
   }
 
   const handleEquals = () => {
-
     if(firstNumber !== '0' && operation !== '' && currentNumber !== '0'){
         switch(operation){
           case '%':
@@ -110,7 +107,6 @@ const App = () => {
             break;
         }
     }
-
   }
 
   return (
